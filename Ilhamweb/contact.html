@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>university website design</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+  <section class ="sub-header">
+    <nav>
+      <a href="index.html"><img src="imagefolder/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<h1>Contact Us</h1>
+  </section>
+  <!-- -----------------------contact us ------------------------------------ -->
+  <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14007.
+    81591070766!2d77.0472669000002!3d28.631141399991503!2m3!1f0!2f
+    0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1690800958669!5m2!1sen!2sin" 
+    width="600"
+     height="450" style="border:0;" allowfullscreen=""
+     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-home"></i>
+          <span>
+            <h5>ICST University Park</h5>
+            <p></p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <span>
+            <h5>+94 743 444 444</h5>
+            <p>Monday to saturday, 8 AM to 5 PM</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <span>
+            <h5>admissions@icst.edu.lk
+            </h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form action="from-handle.php" method="post">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <input type="text" name="subject" placeholder="Enter your subject" required>
+          <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+<!--------------------------------------Footer------------------------------- -->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>The founding vision of ICST is rooted in the belief that higher education should be a transformative force capable of breaking down socio-economic barriers. ICST was established with the explicit purpose of providing a job oriented higher education for those with limited financial means, creating an environment where every aspiring student, regardless of their economic background, can access quality education and embark on a journey of enfranchisement. The founder envisioned a university with inclusivity that ensure students from economically disadvantaged backgrounds have equal opportunities to pursue higher education.
+  </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p> Made with <i class="fa fa heart-o"></i>by JM. Ilham</p>
+</section>
+<!-- ---------------------------------------------------------------------------------------------- -->
+                            <!-- Javascript for toggle menu -->
+  <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right="-200px";
+
+    }
+  </script>
+</body>
+</html>

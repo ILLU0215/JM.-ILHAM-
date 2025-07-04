@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>university website design</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+  <section class ="sub-header">
+    <nav>
+      <a href="index.html"><img src="imagefolder/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<h1>Our Courses</h1>
+  </section>
+  <!-- -----------------------about us content------------------------------ -->
+  <section class="course">
+    <h1>Course we offer</h1>
+    <p> we offers three Faculties with Degree's</p>
+<div class="row">
+  <div class="course-col">
+    <h3>Faculty of Managementntermediate</h3>
+    <p>The Faculty of Management offers a full-time, two-year ACCA program, designed to provide students with a strong academic foundation for a successful career in Accounting and Finance.
+    
+    </p>
+  </div>
+  <div class="course-col">
+    <h3>Faculty of IT</h3>
+    <p>The Faculty of Information Technology offers two programs: the Bachelor of Applied Information Technology and the Higher Diploma in Information Technology. The field of IT focuses on storing, processing, securing, and managing information. These programs emphasize key areas such as software development, databases, and networking.
+    
+    </p>
+   
+  </div>
+  <div class="course-col">
+    <h3>Faculty of Engineering</h3>
+    <p>In Faculty of Engineering we provide Higher Diploma in Quantity Surveyor for a duration of 2 years. The field relates to managing and controlling the costs and contracts of building and infrastructure projects.
+
+    </p>
+   
+  </div>
+</div>
+
+
+  </section>
+  <!-- ------------ -----------facilities-------------------- -->
+<section class="facilities">
+  <h1>Our facilities</h1>
+  <p> 
+  <div class="row">
+    <div class="facilities-col">
+      <img src="imagefolder/libr.jpeg">
+      <h3>library</h3>
+      <p>The library offers knowledge, quiet study, and endless learning opportunities
+      </p>
+    </div>
+    <div class="facilities-col">
+      <img src="imagefolder/gym.jpeg">
+      <h3>Gym</h3>
+      <p> The gym builds strength, boosts energy, and promotes healthy living daily
+      </p>
+    </div>
+    <div class="facilities-col">
+      <img src="imagefolder/kothu.jpeg">
+      <h3>Healty food</h3>
+    <p> Delicious food brings people together, creating joy in every bite.
+      </p>
+    </div>
+  </div>
+</section>
+<!--------------------------------------Footer------------------------------- -->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>we provide best Degree with best Faculties
+  </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p> Made with <i class="fa fa heart-o"></i>by JM. Ilham</p>
+</section>
+<!-- ---------------------------------------------------------------------------------------------- -->
+                            <!-- Javascript for toggle menu -->
+  <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right="-200px";
+
+    }
+  </script>
+</body>
+</html>
